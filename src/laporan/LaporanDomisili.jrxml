@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3ca96d21-5655-40de-af04-4e74ec9a478a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="95"/>
+	<parameter name="pnik" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from datapenduduk where nik=$P{pnik}]]>
+	</queryString>
+	<field name="nik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempat_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="agama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pendidikan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pekerjaan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_perkawinan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kewarganegaraan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rt_rw" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="27" splitType="Stretch"/>
+	</title>
+	<columnHeader>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="530eee9c-2c15-4487-9fdb-9bafc507ff0d" x="186" y="6" width="239" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[PEMERINTAH KABUPATEN BOGOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="52907bcc-a33e-49ba-9377-db20c0008384" x="202" y="26" width="211" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[KECAMATAN KLAPANUNGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d1912cd-48f6-4211-bb0b-efd0cbf76fc7" x="230" y="46" width="156" height="30"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESA LIGARMUKTI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f663a6f5-492f-46e3-bd93-96fb28c9da58" x="195" y="66" width="217" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Cibulakan Desa Ligarmukti - Bogor]]></text>
+			</staticText>
+			<image hAlign="Left">
+				<reportElement uuid="c4913e50-1c5b-4518-b21a-a4c99b90cea3" x="46" y="4" width="87" height="72"/>
+				<imageExpression><![CDATA["C:\\Users\\ASUS\\Documents\\NetBeansProjects\\siapligarmukti\\src\\gambar\\tegarberiman.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="517" splitType="Stretch">
+			<line>
+				<reportElement uuid="7021c667-e2e7-48a0-bc98-04b94d130033" x="10" y="-9" width="533" height="1"/>
+				<graphicElement>
+					<pen lineWidth="2.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="d41c547f-8395-48ec-bae2-9b3ddfb141a8" x="195" y="7" width="224" height="20"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[SURAT KETERANGAN DOMISILI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0d47f62-632a-4ab1-adf7-84b873ec8a51" x="228" y="27" width="91" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nomor : 474.1/]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="d5bf28c4-c099-4a3c-b169-63f5a4679daf" x="308" y="27" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c59fe7f6-87e1-4f75-bde4-457822e30a35" x="49" y="59" width="479" height="44"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yang bertanda tangan di bawah ini, Kepala Desa Ligarmukti Kecamatan Klapanunggal Kabupaten Bogor, menerangkan bahwa :]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5f185ba8-9dd0-4661-a2e2-2e1d699d8ca2" x="202" y="105" width="223" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="abd9cbdf-0be7-4b08-a0b1-45c7e8793244" x="74" y="103" width="128" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama			:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="576e184b-0edd-4304-a7b2-6e28b7365abf" x="202" y="126" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tempat_lahir}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1da9b45d-42dc-417a-a169-7346ada8b258" x="74" y="124" width="128" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tempat, Tgl Lahir	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5caf6633-3484-4e13-863c-33e7657f7872" x="242" y="126" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tanggal_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="14bdfc05-9e3a-440c-b529-db92da62164d" x="202" y="147" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{agama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="577dfaf6-0870-4051-81d8-40f0987dcf4f" x="75" y="146" width="127" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Agama			:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="91383581-7bf8-4280-8ba7-ea84ab9180f6" x="202" y="167" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{kewarganegaraan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c02d9eca-9fb3-479c-a709-131939034cc4" x="75" y="166" width="127" height="17"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kewarganegaraan	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="35fc115d-8e67-4083-ab33-6eebe2a7bfe5" x="202" y="188" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{pekerjaan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f8e2c114-a475-4112-88e8-402540f1838c" x="76" y="185" width="126" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Pekerjaan		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5b8b74a6-447f-423b-9abf-dba16ce3ef66" x="49" y="270" width="293" height="17"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama tersebut di atas benar warga yang berdomisili]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f00bd70a-1d6d-4796-b9de-1898047e88dc" x="203" y="206" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ac6964f5-bd32-441a-a5e1-e1edddaa73c6" x="76" y="204" width="126" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NIK			:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="9c73588a-abcc-4360-88e2-92d0cb50b642" x="201" y="225" width="342" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2bf12682-c875-442f-9251-6b79c2219c64" x="76" y="223" width="126" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat			:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="a39828f4-3708-4af9-84d6-79aca17e7aef" x="333" y="271" width="228" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1cd7729f-ee03-454e-a24d-9e19b8863e56" x="49" y="286" width="512" height="51"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Demikian surat keterangan ini dibuat dengan sebenar-benarnya untuk dapat dipergunakan sebagaimana mestinya.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="10de0659-93b7-486e-9c81-e89a92b192c3" x="386" y="434" width="67" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ligarmukti,]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement uuid="8675f245-306c-4707-8f09-4cb6896b5bca" x="446" y="434" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="69c33671-9234-4378-9076-7a0719b96e8e" x="387" y="453" width="142" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kepala Desa Ligarmukti]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="bfe03275-f4a3-4f8b-a018-daf8a4f66eac" x="443" y="22" width="100" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SAMIN]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
